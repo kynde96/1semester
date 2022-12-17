@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Her kan du læse lidt om forskellige vacciner. Det indebærer børnevaccination, rejsevacciner og HPV vaccine">
+    <title>Første Semester Eksamen</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/x-icon" href="img/favicon-02.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!--får burgermenuen til at virke-->
+    <!-- <script src="js/bootstrap.js"></script> -->
+    
+</head>
+<body>
+<!-- NAVBAR -->
+<header >
+  <nav class="navbar navbar-expand-lg fixed-top text-uppercase">
+      <div class="container-fluid">
+        <a href="index.html"><img class="navbar-brand" src="img/logo.png" alt="logo"> </a>
+        <!-- Indsæt logo ovenover som img tag -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="nav ml-auto mb-2 mb-lg-0 dropdowns">
+              <!-- ml-auto sætter dem til venstre, den skubber den så langt fra venstre den kan -->
+            <li class="nav-item dropdown text-uppercase">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Information
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="information.html">Praktisk Info</a></li>
+                <li><a class="dropdown-item" href="personale.html">Personale</a></li>
+                <li><a class="dropdown-item" href="#">Find os</a></li>
+                <li><a class="dropdown-item" href="#">Aktuelt</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="#">Skemaer</a></li>
+                <li><a class="dropdown-item" href="#">Links</a></li>
+                <li><a class="dropdown-item" href="#">Privathedspolitik</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Lægehuset
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="vacciner.html">Vacciner</a></li>
+                <li><a class="dropdown-item" href="#">Gravid</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="#">Fodvorter</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="navbar nav ml-auto mb-2 mb-lg-0">
+            <a href="#" class="btn-2 text-center" role="button">LOG PÅ</a>
+          </div>
+        </div>
+      </div>
+    </nav>   
+</header>
+
+
+<!-- Hero -->
+<div class="mask-undersider">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="text-white">
+      <h1 class="h1underside text-uppercase">Vacciner</h1>
+    </div>
+  </div>
+</div>
+
+<!-- VACCINER -->
+
+<section class="vaccine-section">
+<br>
+<div class="row col-12">
+
+<div class="vaccinealle col-11 col-md-6 offset-1 mt-3"> 
+  <div class="vaccine1 ">
+    <h2> Børnevaccinationsprogram </h2>
+    <p> Vaccinationer forebygger sygdomme, som kan være alvorlige for barnet. For nogle børnesygdomme gælder, at de er meget smitsomme, og at næsten alle børn vil få sygdommene på et eller andet tidspunkt, hvis de ikke er vaccinerede. <br>
+    <a href="https://www.ssi.dk/vaccinationer/boernevaccination/intervaller-og-tilpasning-til-programmet/sporgsmal-og-svar" target="_blank">Læs mere om børnevaccinationsprogrammet her</a>
+    </p>
+  <p>
+    <button class="btn btn-vaccine" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+      Se skemaet her
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample1">
+    <div class="card card-body vaccinetekst mb-3">
+
+      <table class="table vaccinebox">
+        <thead>
+          <tr>
+            <th scope="col" class="col-1 col-md-2">Alder</th>
+            <th scope="col" class="col-3 col-md-5">Vaccination</th>
+            <th scope="col" class="col-2 col-md-2">Undersøgelser</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5 uger</td>
+            <td></td>
+            <td>Ja</td>
+          </tr>
+          <tr>
+            <td>3 mdr.</td>
+            <td>Di-Te-Ki-Pol+Hib (1) og Prevenar 13 (1)</td>
+            <td>Nej</td>
+          </tr>
+          <tr>
+            <td>5 mdr.</td>
+            <td>	Di-Te-Ki-Pol+Hib (1) og Prevenar 13 (2)</td>
+            <td>Ja</td>
+          </tr>
+          <tr>
+            <td>12 mdr.</td>
+            <td>	Di-Te-Ki-Pol+Hib (1) og Prevenar 13 (3)</td>
+            <td>Ja</td>
+          </tr>
+          <tr>
+            <td>15 mdr.</td>
+            <td>MFR (1)</td>
+            <td>Nej</td>
+          </tr>
+          <tr>
+            <td>2 år</td>
+            <td></td>
+            <td>Ja</td>
+          </tr>
+          <tr>
+            <td>3 år</td>
+            <td></td>
+            <td>Ja</td>
+          </tr>
+          <tr>
+            <td>4 år</td>
+            <td>MFR (2)</td>
+            <td>Ja</td>
+          </tr>
+          <tr>
+            <td>5 år</td>
+            <td>Di-Te-Ki-Pol revacc.</td>
+            <td>Ja</td>
+          </tr>
+          <tr>
+            <td>12 år</td>
+            <td>HPV vacc x 2 (piger og drenge under 15 år) ved 0 og 6 mdr. Piger og drenge over 15 år x 3</td>
+            <td>Nej</td>
+          </tr>
+          <tr>
+            <td>18 år</td>
+            <td>Røde hunde (Kvinder) evt. hvis du ikke har fået den som barn.</td>
+            <td>Nej</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="vaccine2">
+  <h2> Rejsevaccine </h2>
+  <p>Ved rejse i en række lande, især i Asien, Afrika og Sydamerika, er det nødvendigt at blive vaccineret mod smitsomme sygdomme, før du rejser fra Danmark.</p>
+  <p>
+    <button class="btn btn-vaccine" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+      Læs mere her
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample2">
+    <div class="card card-body vaccinetekst mb-3">
+      Hos RK Lægehus giver vi kun information og vaccination til korte rejser. Dvs. går din rejse kun til et enkelt land eller to eller er det en almindelig charterrejse, kan du få rejse information her i huset hos en sygeplejerske. Du vil blive ringet op af en sygeplejerske og i vil sammen aftale en tid til gennemgang af rejsen. Ved denne gennemgang ses der på, hvilke vaccinationer, der anbefales samt rådgives om malaria profylakse, rejse og sundhed.
+        <br> <br>
+      Denne konsultation koster 500 kr. 
+      <br> <br>
+      Går din rejse til flere lande, skal du bestille tid hos Danske lægers vaccinations service i Herning, hvor du kan få rejse vejledning og vaccinationer. Deres priser kan du finde på deres hjemmeside.
+      <br> <br>
+      De vaccinationer du skal have i forbindelse med vaccination i Ringkøbing Lægehus bliver bestilt på apoteket. Du skal ved bestilling ringe til apoteket og bekræfte din bestilling samt aftale tid til hentning af vaccinationen på apoteket og derefter bestille tid i lægehuset til injektion af vaccinationen.
+      <br> <br>
+      Prisen for vaccinationerne er den du betaler på apoteket. Dertil kommer en pris for selve injektionen i lægehuset. Prisen er 300 kr. pt. voksen pt. konsultation og 150 kr. pr. barn. pr. konsultation.
+    </div>
+  </div>
+</div>
+
+<div class="vaccine3">
+  <h2> HPV Vaccine </h2>
+  <p>Både drenge og piger tilbydes HPV-vaccination som en del af det danske børnevaccinationsprogram, når de fylder 12 år.</p>
+  <p>
+    <button class="btn btn-vaccine" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+      Læs mere her
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample3">
+    <div class="card card-body vaccinetekst mb-3">
+      HPV vaccinationer tilbydes piger fra 12 års alderen og indtil de er 18 år. <br>
+
+      Vaccinationen mod livmoderhalskræft består af 3 doser Gardasil, der gives på dag 0, efter 2 måneder og efter 6 måneder.
+    </div>
+  </div>
+</div>
+</div> 
+<div class="col-8 col-md-4 mt-4 offset-1 ml-auto mr-auto billedevaccine mb-4">
+  <!-- mr-auto og ml-auto gør så den kun sættes i midten horisontalt, og ikke følger med de åbne bokse -->
+<img src="img/towfiqu-barbhuiya-FsVEqeiOtPo-unsplash-2.jpg" class="img-fluid" alt="Vaccine billede">
+</div>
+</div>
+
+<br>
+</section>
+
+
+
+
+<section class="footer-section"> <!-- https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+  <footer class="text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3">RK Lægehus</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p class="">Rolighedsvej 99 <br> 4444 Lemvig</p>
+            </li>
+            <li>
+              <p class=""> <b>Tlf: 2424 2424</b></p>
+            </li>
+            <li>
+              <p class="">CVR nr: 54545454 <br> Telefontid <b> kl: 08:00 - 10:00</b> <br> og igen <b> kl: 10:30 - 12:00</b></p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3">Akut telefon</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p class="">Akut-telefon til akut opstået <br> sygdom fra <b>kl: 12.00 - 16:00</b></p>
+            </li>
+            <li>
+              <p class=""> <b>Tlf: 2323 2323</b></p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3">Lægevagten</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p class=""><b>Tlf: 2525 2525</b></p>
+            </li>
+            <li>
+              <p class=""> Fra <b>kl: 16:00 - 08:00</b> i hverdage samt <br> i weekend og på helligdage: hele døgnet</p>
+            </li>
+            <li>
+              <p class="">CVR nr: 54545454 <br> Telefontid kl: <b>08:00 - 10:00</b> <br> og igen kl: <b>10:30 - 12:00</b></p>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <!--Grid column-->
+      </div>
+  
+    <!-- Copyright -->
+    <div class="copyright text-center p-3">
+      © 2022 Copyright: rkcreative - dette site har kun til undervisningsformål!
+    </div>
+    <!-- Copyright -->
+  </footer>
+</section>
+</body>
+</html>

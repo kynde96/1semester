@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #103153;
+}
+
+
+body {
+    line-height: 1.7;
+}
+
+
+/*------------------------------------------------------------------------Navigationsbaren----------------------------------------------------------------------------------*/
+nav{ /*Navigationsbaren overordnet*/
+    background-color: #EBF5FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    height: 4em;
+}
+.nav-item{ /*Selve knapperne i navigationsbaren*/
+    display:block; /*Navigationsbarens oversider er på linje*/
+}
+
+ul{
+    list-style-type: none; /*Fjerner punkterne foran listeelementerne*/
+}
+
+
+li a, .nav-link{
+    color:#103153;
+    font-size: 1.2em;
+}
+
+li a:hover, .nav-link:hover{
+    color:#103153;
+}
+
+
+.dropdown-item{ /*Det her er undersiderne*/
+    display:none; /*Så man ikke kan se undersiderne, medmindre man kører musen over*/
+    width: 190px;/*Minimumsbredden på undersidens knap*/
+    overflow:auto;
+    padding: 0.4em 1.2em; /*Luft inde i undersidens knap. Det første tal er til toppen, den anden er fra venstre*/
+    background-color: #EBF5FF;
+    color:#103153;
+    border: none;
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.dropdown-item:focus {
+    background-color:#EBF5FF
+}
+/* når undersider man trykker på med # link, ikke får en dum baggrundsfarve */
+
+.dropdown-item:hover{
+    background-color: #103153; /*Når musen kører over en af undersiderne så skifter baggrundsfarven*/
+    color: white;
+}
+
+/* ------------------Disse to, gør samlet at man kan hover over menupunkterne så  undermenuerne kommer frem-------------- */
+.dropdown:hover .dropdown-item{ /*Når man "hover" over oversiderne så gør dette at teksten kommer frem*/
+    display:block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+    /* Denne del gør så man kan hover, i stedet for at klikke på dropdown*/
+ }
+
+.dropdown-divider {
+   
+ }
+ /* --------------------------------------------------------------------------------------------------------------------- */
+.btn-2 {
+    background-color: #103153;
+    color: white;
+    border-radius: 0;
+    width: 4.5em;
+    border: none;
+    font-size: 1em;
+    margin-right: -1em;
+    padding: 0.2em;
+}
+
+.btn-2:hover {
+    color: #f6ffff;
+    box-shadow: 0px 0px 3px rgb(122, 122, 122);
+    text-decoration: none;
+}
+
+
+.dropdown-menu {
+    border: none;
+    display: block;
+    background-color: white;
+    outline: none;
+    padding: 0; 
+    /* padding 0 fjerner boksen omkring menuen */
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(16,49,83, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  /* ændre rgb farven under rgba ovenover */
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}  
+/* fjerner boksen omkring burgermenuen */
+
+.collapse {
+    background-color: #EBF5FF;
+    width: 40em;
+}
+
+/* Til at flytte drop downmenuerne ind i midten af siden */
+.dropdowns {
+    margin-right: 3em;
+}
+
+
+/* ---------------------------------------------HERO------------------------------------------------------------------------------- */
+
+
+.h1forside {
+    font-size: 2.8em;
+    margin-top: 1em;
+    text-shadow: 0px 0px 5px #103153;
+}
+
+.h1underside {
+    margin-top: 1em;
+}
+
+.mask {
+    position: relative;
+    background-image: url(img/sasun-bughdaryan-RlIppR1I3E8-unsplash-1920x400.jpg);
+    height: 17em;
+    background-color: #103153;
+    text-align: center;
+    margin-top: 3em;
+    background-size: cover;
+    background-position: center center;
+    /* ER BILLEDET BEDRE????? */
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+.mask-undersider {
+    position: relative;
+    background-image: url(img/sasun-bughdaryan-RlIppR1I3E8-unsplash-1920-200.jpg);
+    height: 9.5em;
+    background-color: #103153;
+    text-align: center;
+    margin-top: 3em;
+    background-size: cover;
+    background-position: center center;
+    /* centrere både horisontalt og verticalt */
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+/* ----------------------------------------------------------------------------------------CARDS----------------------------------------------------------------------------- */
+
+.card-section {
+    background-color: #EBF5FF;
+}
+
+.cardknap-forside {
+    height: 10em;
+    margin: auto;
+    margin-top: 2em;
+    filter: invert(16%) sepia(79%) saturate(680%) hue-rotate(174deg) brightness(89%) contrast(97%);
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+}
+
+/* det enkelte kort */
+.card-forside {
+    border: none;
+    border-radius: 0;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+/* Alle kortene */
+.card-deck-forside {  
+    /* margin-left: 10em;
+    margin-right: 10em; */
+    margin-top: 3em;
+    column-gap: 1em;
+    box-sizing: border-box;
+}
+
+.card-forside h5 {
+    text-align: center;
+}
+
+.btn-kort {
+    background-color: #103153;
+    color: white;
+    border-radius: 0;
+    border: none;
+    font-size: 1em;
+    padding: 0.4em;
+    width: 14em;
+
+}
+
+.btn-kort:hover {
+    color: #f6ffff;
+    box-shadow: 0px 0px 3px rgb(122, 122, 122);
+}
+
+/* -----------------------------------------------------------------------telefontider ---------------------------------------------------------------------------------------*/
+.telefon-section {
+    background-color: #EBF5FF;
+}
+
+.container-tele {
+    height: auto;
+    /* margin-top: 2em;
+    margin-bottom: 4em; */
+    background-color: white;
+    min-width: 81%;
+    /* min-width gør den bredere */
+}
+
+
+.tider {
+    background-color: #D1E8FF;
+    height: auto;
+    padding: 1rem;
+    
+}
+
+/* Padding til både teksten og tabellen om telefontider */
+.tider, .tidertekst {
+    padding: 2em;
+}
+
+/* Teksten til konsulationstider */
+.tider h3 {
+    text-align: center;
+}
+
+.telefontabel {
+    /* margin: auto; */
+    margin:auto;
+}
+
+.telefontabel td {
+    width: 110px;
+    padding: 0.2em;
+}
+
+/* Teksten under konsolationstider */
+.tider p {
+    text-align: center;
+    padding-top: 1.1em;
+}
+
+.tdright {
+    text-align: right;
+}
+
+/* overskrift til tekst om telefon */
+.tidertekst h3, .tidertekst p {
+    text-align: center;
+}
+
+.tidertekst p {
+    padding-top: 1em;
+}
+
+.teleteksttabel {
+    margin: auto;
+
+}
+
+.teleteksttabel td {
+    width: 13em;
+    padding: 0.2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+/*------------------------------------------------------------------- CARDS Underside-------------------------------------------------------------------------------------- */
+
+/* PERSONALE UNDERSIDE------------------------- */
+
+/* baggrunden bag lægerne */
+.card-section-læge {
+    background-color: #EBF5FF;
+
+}
+
+.card-section-personale {
+    background-color: #D1E8FF;
+}
+
+.cardknap-læge {
+    height: auto;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.cardknap-personale {
+    height: auto;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 0;
+}
+
+/* Alle kortene */
+.card-deck-læge {  
+    /* margin-left: 10em;
+    margin-right: 10em; */
+    /* margin-top: 3em; */
+    /* column-gap: 2em; */
+    box-sizing: border-box;
+    margin: auto;
+    column-gap: 2em;
+}
+
+.card-deck-personale {  
+    box-sizing: border-box;
+    /* margin: auto; */
+    column-gap: 4em;
+}
+.card-body-personale, .card-body-læge { /*text allign til begge bokse i personale*/
+    text-align: center;
+
+}
+
+.card-læge {
+    border: none;
+    border-radius: 0;
+    height: auto;
+    margin: auto;
+
+}
+
+.card-personale {
+    height: auto; /*ændrer højden på selve kortet*/
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border-radius: 0;
+}
+
+/* OVERWRITE AF PADDING TIL TEKSTFELT */
+.card-body-personale {
+    padding: 0.3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* -----------------------------------------------------------INFORMATIONSSIDE ----------------------------------------------------------------------------------------------*/
+
+.info-section1 {
+    background-color: #EBF5FF;
+}
+
+.info-section2 {
+    background-color: #D1E8FF;
+}
+.containerinfo {
+    
+}
+
+.firkant1 {
+    background-color: #EBF5FF;
+}
+
+.firkant2 {
+    background-color: #D1E8FF;
+}
+
+.divider{ 
+    border:         none;
+    border-left:    1px solid white;
+    height:         auto;
+    width:          1px;    
+    top: 30%;   
+    bottom: 0;
+}
+/* Lavede 2 sektions, som så har tilhørende farve som de 2 bokse deri, så border-left ikke gik helt op til kanten */
+
+
+/* ----------------------------------------------------------------------VACCINER---------------------------------------------------------------------------------------------- */
+
+.vaccine-section {
+   background-color: #EBF5FF; 
+}
+
+.btn-vaccine {
+    background-color: #103153;
+    color: white;
+    border-radius: 0;
+    border: none;
+    font-size: 1em;
+    margin-right: -1em;
+    padding: 0.4em;
+    width: 10em;
+}
+
+.btn-vaccine:hover {
+    color: #f6ffff;
+    box-shadow: 0px 0px 3px rgb(122, 122, 122);
+}
+
+.vaccinetekst {
+   padding: 0;
+   border: none;
+   background-color: #EBF5FF;
+   /* skubber tabellen helt ind  */
+
+    /* teksten og selve cardet */
+}
+
+tbody {
+    vertical-align: left;
+}
+
+/* ændrer borderen på tabellen i collapsen */
+.table thead th, .table td {
+    border-color: #D1E8FF;
+    border-bottom: none;
+    /* gør den tykke streg til table head tynd som de andre */
+}
+
+
+
+.collapse {
+    width: auto;
+    /* width auto gør at den automatisk passer til skærmen */
+}
+
+
+
+/* FOOTER */
+
+.footer-section {
+    background-color: #103153;
+    color: #ffffff;
+}
+
+
+
+.copyright {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+

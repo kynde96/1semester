@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Første Semester Eksamen</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/x-icon" href="img/favicon-02.png">
+    <meta name="description" content="Her kan du se lægehusets læger og personale">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!--får burgermenuen til at virke-->
+    <!-- <script src="js/bootstrap.js"></script> -->
+    
+</head>
+<body>
+<!-- NAVBAR -->
+<header >
+  <nav class="navbar navbar-expand-lg fixed-top text-uppercase">
+      <div class="container-fluid">
+        <a href="index.html"><img class="navbar-brand" src="img/logo.png" alt="logo"> </a>
+        <!-- Indsæt logo ovenover som img tag -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="nav ml-auto mb-2 mb-lg-0 dropdowns">
+              <!-- ml-auto sætter dem til venstre, den skubber den så langt fra venstre den kan -->
+            <li class="nav-item dropdown text-uppercase">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Information
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="information.html">Praktisk Info</a></li>
+                <li><a class="dropdown-item" href="personale.html">Personale</a></li>
+                <li><a class="dropdown-item" href="#">Find os</a></li>
+                <li><a class="dropdown-item" href="#">Aktuelt</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="#">Skemaer</a></li>
+                <li><a class="dropdown-item" href="#">Links</a></li>
+                <li><a class="dropdown-item" href="#">Privathedspolitik</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Lægehuset
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="vacciner.html">Vacciner</a></li>
+                <li><a class="dropdown-item" href="#">Gravid</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="#">Fodvorter</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="navbar nav ml-auto mb-2 mb-lg-0">
+            <a href="#" class="btn-2 text-center" role="button">LOG PÅ</a>
+          </div>
+        </div>
+      </div>
+    </nav>   
+</header>
+
+<!-- Hero -->
+  <div class="mask-undersider">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="h1underside text-uppercase">Personale</h1>
+      </div>
+    </div>
+  </div>
+
+
+<!-- CARDS -->
+
+<section class="card-section-læge">
+  <br> <br>
+  <h2 class="text-center">Lægerne</h2>
+  <br>
+<div class="card-deck card-deck-læge m-auto justify-content-center">
+  <!-- card deck laver mellemrum, card group sætter dem sammen -->
+  <div class="card card-læge ml col-9 col-md-3 ">
+    <img class="card-img-top cardknap-læge" src="img/lægebilleder/pexels-antoni-shkraba-5215024.jpg" alt="Maibrit Jensen">
+    <div class="card-body card-body-læge m-auto">
+      <h5 class="card-title">Maibrit Jensen</h5>
+      <p class="card-text">Speciallæge i Alm. Medicin</p>
+    </div>
+  </div>
+  <div class="card card-læge col-9 col-md-3">
+    <img class="card-img-top cardknap-læge" src="img/lægebilleder/pexels-karolina-grabowska-6627931.jpg" alt="Søren Højgaard">
+    <div class="card-body card-body-læge m-auto">
+      <h5 class="card-title">Søren Højgaard</h5>
+      <p class="card-text text-center">Speciallæge i Alm. Medicin</p>
+    </div>
+  </div>
+  <div class="card card-læge col-9 col-md-3">
+    <img class="card-img-top cardknap-læge" src="img/lægebilleder/pexels-klaus-nielsen-6303564.jpg" alt="Johannes Christensen">
+    <div class="card-body card-body-læge m-auto">
+      <h5 class="card-title">Johannes Christensen</h5>
+      <p class="card-text">Speciallæge i Alm. Medicin</p>
+    </div>
+  </div>
+</div>
+<br> <br> <br>
+</section>
+
+<section class="card-section-personale">
+  <br> <br>
+  <h2 class="text-center">Personale</h2>
+  <br>
+  <div class="container-fluid">
+<div class="card-deck card-deck-personale justify-content-center">
+  <!-- card deck laver mellemrum, card group sætter dem sammen -->
+  <div class="card card-personale col-8 col-md-2 mb-5">
+    <img class="card-img-top cardknap-personale" src="img/lægebilleder/pexels-cedric-fauntleroy-4270366.jpg" alt="Naomi Højgaard">
+    <div class="card-body card-body-personale m-auto">
+      <h5 class="card-title">Naomi Højgaard</h5>
+      <p class="card-text">Sygeplejerske</p>
+    </div>
+  </div>
+  <div class="card card-personale col-8 col-md-2 mb-5">
+    <img class="card-img-top cardknap-personale" src="img/lægebilleder/pexels-pavel-danilyuk-7108283.jpg" alt="Karen Marie Boesen">
+    <div class="card-body card-body-personale m-auto">
+      <h5 class="card-title">Karen Marie Boesen</h5>
+      <p class="card-text text-center">Sygeplejerske</p>
+    </div>
+  </div>
+  <div class="card card-personale col-8 col-md-2 mb-5">
+    <img class="card-img-top cardknap-personale" src="img/lægebilleder/pexels-los-muertos-crew-8460370.jpg" alt="Jytte Rask">
+    <div class="card-body card-body-personale m-auto">
+      <h5 class="card-title">Jytte Rask</h5>
+      <p class="card-text">Sygeplejerske</p>
+    </div>
+  </div>
+  <div class="card card-personale col-8 col-md-2 mb-5">
+    <img class="card-img-top cardknap-personale" src="img/lægebilleder/pexels-pavel-danilyuk-7108280.jpg" alt="Pernille Jul">
+    <div class="card-body card-body-personale m-auto">
+      <h5 class="card-title">Pernille Jul</h5>
+      <p class="card-text">Sygeplejerske</p>
+    </div>
+  </div>
+</div>
+<!-- Her starter 2nd row -->
+
+<div class="card-deck card-deck-personale justify-content-center">
+  <!-- card deck laver mellemrum, card group sætter dem sammen -->
+  <div class="card card-personale col-8 col-md-2 mb-5">
+    <img class="card-img-top cardknap-personale" src="img/lægebilleder/rian-ramirez-rm7rZYdl3rY-unsplash.jpg" alt="Hanne Rose">
+    <div class="card-body card-body-personale m-auto">
+      <h5 class="card-title">Hanne Rose</h5>
+      <p class="card-text">Fysioterapeut</p>
+    </div>
+  </div>
+  <div class="card card-personale col-8 col-md-2 mb-5">
+    <img class="card-img-top cardknap-personale" src="img/lægebilleder/pexels-andrea-piacquadio-774909.jpg" alt="Andrea Constantin">
+    <div class="card-body card-body-personale m-auto">
+      <h5 class="card-title">Andrea Constantin</h5>
+      <p class="card-text text-center">Lægesekretær</p>
+    </div>
+  </div>
+  <div class="card card-personale col-8 col-md-2 mb-5">
+    <img class="card-img-top cardknap-personale" src="img/lægebilleder/jake-nackos-IF9TK5Uy-KI-unsplash.jpg" alt="Mathilde Kjær">
+    <div class="card-body card-body-personale m-auto">
+      <h5 class="card-title">Mathilde Kjær</h5>
+      <p class="card-text">Lægesekretær</p>
+    </div>
+  </div>
+  <div class="card card-personale col-8 col-md-2 mb-5">
+    <img class="card-img-top cardknap-personale" src="img/lægebilleder/laura-chouette-nkWnc-W_GP8-unsplash.jpg" alt="Caroline Svane">
+    <div class="card-body card-body-personale m-auto">
+      <h5 class="card-title">Caroline Svane</h5>
+      <p class="card-text">Lægesekretær</p>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+</section>
+
+
+<section class="footer-section"> <!-- https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+  <footer class="text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3">RK Lægehus</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p class="">Rolighedsvej 99 <br> 4444 Lemvig</p>
+            </li>
+            <li>
+              <p class=""> <b>Tlf: 2424 2424</b></p>
+            </li>
+            <li>
+              <p class="">CVR nr: 54545454 <br> Telefontid <b> kl: 08:00 - 10:00</b> <br> og igen <b> kl: 10:30 - 12:00</b></p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3">Akut telefon</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p class="">Akut-telefon til akut opstået <br> sygdom fra <b>kl: 12.00 - 16:00</b></p>
+            </li>
+            <li>
+              <p class=""> <b>Tlf: 2323 2323</b></p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3">Lægevagten</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p class=""><b>Tlf: 2525 2525</b></p>
+            </li>
+            <li>
+              <p class=""> Fra <b>kl: 16:00 - 08:00</b> i hverdage samt <br> i weekend og på helligdage: hele døgnet</p>
+            </li>
+            <li>
+              <p class="">CVR nr: 54545454 <br> Telefontid kl: <b>08:00 - 10:00</b> <br> og igen kl: <b>10:30 - 12:00</b></p>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <!--Grid column-->
+      </div>
+  
+    <!-- Copyright -->
+    <div class="copyright text-center p-3">
+      © 2022 Copyright: rkcreative - dette site har kun til undervisningsformål!
+    </div>
+    <!-- Copyright -->
+  </footer>
+</section>
+</body>
+</html>

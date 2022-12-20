@@ -156,7 +156,6 @@ li a:hover, .nav-link:hover{
     margin-top: 3em;
     background-size: cover;
     background-position: center center;
-    /* ER BILLEDET BEDRE????? */
     background-repeat: no-repeat;
     width: 100%;
 
@@ -475,3 +474,10 @@ tbody {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* -------------------------GENERELLE KOMMENTARER--------------------------- */
+/* Det der generelt drillede mig, var meget at få ting til at line op med hinanden,når det var mere midt på siden */
+/* Derudover mangler jeg også en mulighed for at fjerne noget CSS, når skærmen er lile. Man kan gøre det med bootstraps ml-sm-5 foreksempel, men man kan ikke sætte 
+den over 5, så man er lidt begrænset*/
+/* Et eksempel er f.eks. på undersiden med praktisk information, jeg lavede en border som deler siden, som jeg gerne ville have ikke var der når skærmen blev lille, det kunne
+jeg dog ikke finde ud af, så jeg må leve med at den er der */
+/* En anden ting der også drillede meget, var billederne når man skulle lave dem responsive. Jeg endte med at fikse det, men det brugte jeg meget tid på */
